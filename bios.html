@@ -1,82 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instructor Bios | Empire Music Studio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructor Bios | Empire Music Studio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page-only styling to force 2-up bios and nice video thumbnails -->
+  <style>
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .video-thumb {
+      display: block;
+      margin-top: 14px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.10);
+      text-decoration: none;
+    }
+    .video-thumb img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .video-cap {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-top: 8px;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-inner">
-            <div class="brand"><span class="dot"></span>Empire Music Studio</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="mission.html">Mission</a>
-                <a href="rates.html">Rates</a>
-                <a href="bios.html">Bios</a>
-                <a href="testimonials.html">Student Sample</a>
-                <a href="policy.html">Policy</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <main class="container">
+  <nav>
+    <div class="nav-inner">
+      <div class="brand"><span class="dot"></span>Empire Music Studio</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="rates.html">Rates</a>
+        <a href="bios.html">Bios</a>
+        <a href="testimonials.html">Student Sample</a>
+        <a href="policy.html">Policy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-        <h2>Instructor Bios</h2>
-        <div class="card-grid">
-            <div class="card bio-card">
-                <img src="images/kevin-takeda.jpg" alt="Kevin Takeda headshot" class="bio-photo">
-                <h3>Kevin Takeda</h3>
-                <p class="lead">
-                   Kevin is currently a Doctoral student at the Cleveland Institute of
-Music studying with Gabriela Montero. He holds a Master’s of Music Degree from the
-New England Conservatory, where he studied with Wha Kyung Byun and was a recipient
-of the Dean’s Scholarship. Before that, he completed a Bachelor’s of Music Degree at the
-Juilliard School, where his teachers were Matti Raekallio and Orli Shaham. There, was a
-recipient of both the Kamiya Sisters Piano Scholarship and the Alan D. Marks Center
-Scholarship. He is also a Music Academy of the West alumnus.
-                    
-He began his piano studies  at age 11, and shortly after at age 13 began attending
-Interlochen Arts Academy High School under the guidance of Thomas Lymenstull. Since
-then, he has gained prizes and recognition in many competitions, some among them are
-the MTNA Piano Competition, the National Federation of Music Clubs Competition, the
-Arthur Fraser International Concerto Competition, the Marian Garcia Collegiate
-Competition, the Dubois National Piano Competition, the Eastern Music Festival Solo
-Competition, and he was a National NFAA YoungArts winner. He has performed in
-esteemed venues such as the Kennedy Center, Detroit Symphony Hall, Jordan Hall,
-Lincoln Center, and Hahn Hall. Festival attendances include the Aspen Music Festival,
-Music Academy of the West, Pianofest in the Hamptons, Bowdoin International Music
-Festival, Art of Piano, and Southeastern Piano Festival. An avid chamber music
-enthusiast, he recently performed Bartok’s Sonata for Two Pianos and Percussion and
-Samuel Coleridge Taylor’s Nonet.
+  <main class="container">
+    <h2>Instructor Bios</h2>
 
-                    
-                </p>
-                <p class="lead">
-                    His teaching emphasizes healthy, efficient technique, musical clarity, and expressive freedom. He has been teaching piano for 15 years, and his students have gained success in competitions across the country as well as festival and music program admissions. Youtube Channel: www.youtube.com/@kevintakeda7553
-                </p>
-            </div>
+    <div class="card-grid">
+      <!-- Kevin -->
+      <div class="card bio-card">
+        <img src="images/kevin-takeda.jpg" alt="Kevin Takeda headshot" class="bio-photo">
+        <h3>Kevin Takeda</h3>
 
-            <div class="card bio-card">
-                <img src="images/guoanni-qin.jpg" alt="Guoanni Qin headshot" class="bio-photo">
-                <h3>Guoanni Qin</h3>
-                <p class="lead">Guoanni Annie Qin is an accomplished pianist who is pursuing her Doctor of Musical Arts degree in piano performance with Kathryn Brown at the Cleveland Institute of Music. She has graduated with a Master of Music degree from The Juilliard School in New York City where she received the Van Cliburn Alumni Prize, the John Post Scholarship, the Susan Rose Piano Scholarship, and the Arnold Levy Scholarship at the Juilliard School. Annie also holds a Bachelor of Music degree from Oberlin Conservatory. During her undergraduate years, she earned several notable achievements, including first prize in Oberlin’s Concerto Competition and the Rudolf Serkin Scholarship Competition. She also received the Carol Nott Piano Pedagogy Prize and third prize in the inaugural Peter Takacs Beethoven Piano Competition. Annie was a member of the Oberlin Contemporary Music Ensemble and served as a resident performer at the Kendal Community at Oberlin.
-Her orchestral engagements include performances of Rachmaninoff’s Second Piano Concerto with the Oberlin Orchestra under the baton of Raphael Jimenez and with the Xiamen Song & Dance Symphony Orchestra led by maestro Xiaotang Xia. Her recording of Rachmaninoff’s Piano Concerto No. 2 with the Oberlin Orchestra has been selected for broadcast on WQXR’s Young Artists Showcase, New York’s premier classical radio program. Annie was selected to participate in the renowned Aspen Music Festival, PianoTexas Piano Festival, Rebecca Penneys Piano Festival, Gijon International Music Festival Fellowship Program and the Gilmore Piano Festival Fellowship Program. 
+        <p class="lead">
+          Kevin is currently a Doctoral student at the Cleveland Institute of
+          Music studying with Gabriela Montero. He holds a Master’s of Music Degree from the
+          New England Conservatory, where he studied with Wha Kyung Byun and was a recipient
+          of the Dean’s Scholarship. Before that, he completed a Bachelor’s of Music Degree at the
+          Juilliard School, where his teachers were Matti Raekallio and Orli Shaham. There, was a
+          recipient of both the Kamiya Sisters Piano Scholarship and the Alan D. Marks Center
+          Scholarship. He is also a Music Academy of the West alumnus.
 
-Annie was taught by Maestro Andrzej Jasinski, Pierre-Laurent Aimard, Paul Lewis, Dang Thai Son, Mikhail Voskresensky, Matti Raekallio, Jerome Lowenthal, Robert Lewin, Alexander Kobrin, Stanislav Ioudenitch, Douglas Humpherys, Haesun Paik, Alexander Korsantia, etc.
+          <br><br>
 
-    Youtube Channel: https://www.youtube.com/@annieqin0914            
-                </p>
-            </div>
-        </div>
+          He began his piano studies at age 11, and shortly after at age 13 began attending
+          Interlochen Arts Academy High School under the guidance of Thomas Lymenstull. Since
+          then, he has gained prizes and recognition in many competitions, some among them are
+          the MTNA Piano Competition, the National Federation of Music Clubs Competition, the
+          Arthur Fraser International Concerto Competition, the Marian Garcia Collegiate
+          Competition, the Dubois National Piano Competition, the Eastern Music Festival Solo
+          Competition, and he was a National NFAA YoungArts winner. He has performed in
+          esteemed venues such as the Kennedy Center, Detroit Symphony Hall, Jordan Hall,
+          Lincoln Center, and Hahn Hall. Festival attendances include the Aspen Music Festival,
+          Music Academy of the West, Pianofest in the Hamptons, Bowdoin International Music
+          Festival, Art of Piano, and Southeastern Piano Festival. An avid chamber music
+          enthusiast, he recently performed Bartok’s Sonata for Two Pianos and Percussion and
+          Samuel Coleridge Taylor’s Nonet.
+        </p>
 
-    </main>
-    <footer>
-        <div class="footer-inner">
-            <span class="fineprint">&copy; 2026 Empire Music Studio • Cleveland, Ohio</span>
-            <span class="fineprint">Email: empiremusiccleveland@gmail.com • Phone: (760) 808-2081</span>
-        </div>
-    </footer>
-</body>
-</html>
+        <p class="lead">
+          His teaching emphasizes healthy, efficient technique, musical clarity, and expressive freedom.
+          He has been teaching piano for 15 years, and his students have gained success in competitions
+          across the country as well as festival and music program admissions.
+          <br>
+          YouTube Channel: www.youtube.com/@kevintakeda7553
+        </p>
+
+        <!-- YouTube thumbnail (Kevin) -->
+        <a class="video-thumb" href="https://youtu.be/RXJDw3faH7I" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/RXJDw3faH7I/hqdefault.jpg" alt="Watch Kevin's video on YouTube">
+        </a>
+        <div class="video-cap">Watch Kevin perform</div>
+      </div>
+
+      <!-- Annie -->
+      <div class="card bio-card">
+        <img src="images/guoanni-qin.jpg" alt="Guoanni Qin headshot" class="bio-photo">
+        <h3>Guoanni Qin</h3>
+
+        <p class="lead">
+          Guoanni Annie Qin is an accomplished pianist who is pursuing her Doctor of Musical Arts degree in piano performance
+          with Kathryn Brown at the Cleveland Institute of Music. She has graduated with a Master of Music degree from
+          The Juilliard School in New York City where she received the Van Cliburn Alumni Prize, the John Post Scholarship,
+          the Susan Rose Piano Scholarship, and the Arnold Levy Scholarship at the Juilliard School. Annie also holds a
+          Bachelor of Music degree from Oberlin Conservatory. During her undergraduate years, she earned several notable
+          achievements, including first prize in Oberlin’s Concerto Competition and the Rudolf Serkin Scholarship Competition.
+          She also received the Carol Nott Piano Pedagogy Prize and third prize in the inaugural Peter Takacs Beethoven Piano
+          Competition. Annie was a member of the Oberlin Contemporary Music Ensemble and served as a resident performer at the
+          Kendal Community at Oberlin.
+
+          <br><br>
+
+          Her orchestral engagements include performances of Rachmaninoff’s Second Piano Concerto with the Oberlin Orchestra
+          under the baton of Raphael Jimenez and with the Xiamen Song &amp; Dance Symphony Orchestra led by maestro Xiaotang Xia.
+          Her recording of Rachmaninoff’s Piano Concerto No. 2 with the Oberlin Orchestra has been selected for broadcast on
+          WQXR’s Young Artists Showcase, New York’s premier classical radio program. Annie was selected to participate in the
+          renowned Aspen Music Festival, PianoTexas Piano Festival, Rebecca Penneys Piano Festival, Gijon International Music
+          Festival Fellowship Program and the Gilmore Piano Festival Fellowship Program.
+
+          <br><br>
+
+          Annie was taught by Maestro Andrzej Jasinski, Pierre-Laurent Aimard, Paul Lewis, Dang Thai Son, Mikhail Voskresensky,
+          Matti Raekallio, Jerome Lowenthal, Robert Lewin, Alexander Kobrin, Stanislav Ioudenitch, Douglas Humpherys,
+          Haesun Paik, Alexander Korsantia, etc.
+
