@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Instructor Bios | Empire Music Studio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- Page-only styling to force 2-up bios and nice video thumbnails -->
+  <!-- Page-only styling to force 2-up bios and responsive video embeds -->
   <style>
     .card-grid {
       display: grid;
@@ -19,26 +19,31 @@
         grid-template-columns: 1fr;
       }
     }
-    .video-thumb {
-      display: block;
+
+    .video-embed {
       margin-top: 14px;
       border-radius: 12px;
       overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.10);
-      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(0,0,0,0.25);
     }
-    .video-thumb img {
-      display: block;
+    .video-embed .ratio {
+      position: relative;
       width: 100%;
-      height: auto;
+      padding-top: 56.25%; /* 16:9 */
+      height: 0;
     }
-    .video-cap {
-      font-size: 0.95rem;
-      opacity: 0.85;
-      margin-top: 8px;
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
   </style>
 </head>
+
 <body>
   <nav>
     <div class="nav-inner">
@@ -61,7 +66,7 @@
     <div class="card-grid">
       <!-- Kevin -->
       <div class="card bio-card">
-        <img src="images/kevin-takeda.jpg" alt="Kevin Takeda headshot" class="bio-photo">
+        <img src="images/kevin-takeda.jpg" alt="Kevin Takeda headshot" class="bio-photo" />
         <h3>Kevin Takeda</h3>
 
         <p class="lead">
@@ -72,9 +77,7 @@
           Juilliard School, where his teachers were Matti Raekallio and Orli Shaham. There, was a
           recipient of both the Kamiya Sisters Piano Scholarship and the Alan D. Marks Center
           Scholarship. He is also a Music Academy of the West alumnus.
-
           <br><br>
-
           He began his piano studies at age 11, and shortly after at age 13 began attending
           Interlochen Arts Academy High School under the guidance of Thomas Lymenstull. Since
           then, he has gained prizes and recognition in many competitions, some among them are
@@ -94,20 +97,26 @@
           His teaching emphasizes healthy, efficient technique, musical clarity, and expressive freedom.
           He has been teaching piano for 15 years, and his students have gained success in competitions
           across the country as well as festival and music program admissions.
-          <br>
+          <br />
           YouTube Channel: www.youtube.com/@kevintakeda7553
         </p>
 
-        <!-- YouTube thumbnail (Kevin) -->
-        <a class="video-thumb" href="https://youtu.be/RXJDw3faH7I" target="_blank" rel="noopener">
-          <img src="https://img.youtube.com/vi/RXJDw3faH7I/hqdefault.jpg" alt="Watch Kevin's video on YouTube">
-        </a>
-        <div class="video-cap">Watch Kevin perform</div>
+        <!-- PLAYABLE YouTube embed (Kevin) -->
+        <div class="video-embed">
+          <div class="ratio">
+            <iframe
+              src="https://www.youtube.com/embed/RXJDw3faH7I"
+              title="Kevin Takeda video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
 
       <!-- Annie -->
       <div class="card bio-card">
-        <img src="images/guoanni-qin.jpg" alt="Guoanni Qin headshot" class="bio-photo">
+        <img src="images/guoanni-qin.jpg" alt="Guoanni Qin headshot" class="bio-photo" />
         <h3>Guoanni Qin</h3>
 
         <p class="lead">
@@ -120,32 +129,32 @@
           She also received the Carol Nott Piano Pedagogy Prize and third prize in the inaugural Peter Takacs Beethoven Piano
           Competition. Annie was a member of the Oberlin Contemporary Music Ensemble and served as a resident performer at the
           Kendal Community at Oberlin.
-
           <br><br>
-
           Her orchestral engagements include performances of Rachmaninoff’s Second Piano Concerto with the Oberlin Orchestra
           under the baton of Raphael Jimenez and with the Xiamen Song &amp; Dance Symphony Orchestra led by maestro Xiaotang Xia.
           Her recording of Rachmaninoff’s Piano Concerto No. 2 with the Oberlin Orchestra has been selected for broadcast on
           WQXR’s Young Artists Showcase, New York’s premier classical radio program. Annie was selected to participate in the
           renowned Aspen Music Festival, PianoTexas Piano Festival, Rebecca Penneys Piano Festival, Gijon International Music
           Festival Fellowship Program and the Gilmore Piano Festival Fellowship Program.
-
           <br><br>
-
           Annie was taught by Maestro Andrzej Jasinski, Pierre-Laurent Aimard, Paul Lewis, Dang Thai Son, Mikhail Voskresensky,
           Matti Raekallio, Jerome Lowenthal, Robert Lewin, Alexander Kobrin, Stanislav Ioudenitch, Douglas Humpherys,
           Haesun Paik, Alexander Korsantia, etc.
-
           <br><br>
-
           YouTube Channel: https://www.youtube.com/@annieqin0914
         </p>
 
-        <!-- YouTube thumbnail (Annie) - UPDATED -->
-        <a class="video-thumb" href="https://youtu.be/hPIzvmjLF5E?si=_W6NCkdK8xpFjXpp" target="_blank" rel="noopener">
-          <img src="https://img.youtube.com/vi/hPIzvmjLF5E/hqdefault.jpg" alt="Watch Annie's video on YouTube">
-        </a>
-        <div class="video-cap">Watch Annie perform</div>
+        <!-- PLAYABLE YouTube embed (Annie) -->
+        <div class="video-embed">
+          <div class="ratio">
+            <iframe
+              src="https://www.youtube.com/embed/hPIzvmjLF5E"
+              title="Guoanni Qin video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
     </div>
   </main>
